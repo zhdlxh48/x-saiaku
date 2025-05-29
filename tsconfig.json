@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "outDir": "./dist_ts", // tsc가 컴파일한 JS 파일 출력 경로 (esbuild 입력용)
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": false, // 최종 빌드에서는 false, 개발 중에는 true로 설정 가능
+    "noEmitOnError": true,
+    "moduleResolution": "node", // ESNext 모듈과 함께 node 방식 사용
+    "skipLibCheck": true, // 의존성 라이브러리 타입 검사 스킵
+    "forceConsistentCasingInFileNames": true,
+    "declaration": false //.d.ts 파일 생성 안 함
+  },
+  "include": [
+    "src/**/*"
+  ], // 컴파일 대상 파일 범위
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist_ts",
+    "build.js"
+  ] // 컴파일 제외 대상
+}

@@ -1,0 +1,19 @@
+{
+  "name": "X Saiaku",
+  "namespace": "http://tampermonkey.net/",
+  "version": "1.0.1",
+  "description": "X is Saiaku!!",
+  "author": "MayB",
+  "icon": "https://www.google.com/s2/favicons?sz=64&domain=x.com",
+  "match": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "grant": [
+    "GM_setValue",
+    "GM_getValue",
+    "GM_notification",
+    "window.focus"
+  ],
+  "run-at": "document-idle"
+}
